@@ -15,7 +15,7 @@ const MenuOption = (props) => {
 };
 const Menu = () => {
     const { toggled } = React.useContext(AppContext);
-    const profileImage = "/images/logo.png";
+    const profileImage = "images/logo.png";
     const getOptions = (options, type) => {
         return options.map((option, index) => (React.createElement(MenuOption, { key: option.label, icon: option.icon, index: index, label: option.label, url: option.url, type: type })));
     };
